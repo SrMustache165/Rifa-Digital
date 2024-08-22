@@ -123,7 +123,7 @@ function Index() {
                         <input
                           {...register("phone")}
                           type="tel"
-                          placeholder="(81) 12345-6789"
+                          placeholder="(44) 12345-6789"
                           value={phone}
                           onChange={handlePhoneChange}
                           className="w-full bg-zinc-100 rounded-md p-2 text-xs lg:text-base"

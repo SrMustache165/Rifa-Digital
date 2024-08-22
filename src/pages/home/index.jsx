@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await api.get("/getproducts/5");
+        const response = await api.get("/getproducts/all");
         setProducts(response.data);
       } catch (error) {
         console.log(error.message);
@@ -50,9 +50,8 @@ export default function Home() {
                 className="relative hover:bg-zinc-200 transition-all flex flex-col sm:gap-1 bg-white border-zinc-200 lg:max-w-[1000px] lg:min-w-[1000px] rounded-md overflow-hidden"
               >
                 <div
-                  className={`absolute top-2 left-2 py-2 px-4 rounded-md font-semibold text-white text-sm ${
-                    item.status ? "bg-green-500" : "bg-red-500"
-                  }`}
+                  className={`absolute top-2 left-2 py-2 px-4 rounded-md font-semibold text-white text-sm ${item.status ? "bg-green-500" : "bg-red-500"
+                    }`}
                 >
                   {item.status ? "Ativo" : "Finalizado"}
                 </div>
@@ -142,9 +141,8 @@ export default function Home() {
                   className="relative hover:bg-zinc-200 transition-all flex flex-col sm:gap-1 bg-white border-zinc-200 lg:max-w-[300px] lg:w-[300px]  w-full rounded-md overflow-hidden"
                 >
                   <div
-                    className={`absolute top-2 left-2 py-2 px-4 rounded-md font-semibold text-white text-sm ${
-                      item.status ? "bg-green-500" : "bg-red-500"
-                    }`}
+                    className={`absolute top-2 left-2 py-2 px-4 rounded-md font-semibold text-white text-sm ${item.status ? "bg-green-500" : "bg-red-500"
+                      }`}
                   >
                     {item.status ? "Ativo" : "Finalizado"}
                   </div>

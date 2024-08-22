@@ -88,7 +88,7 @@ export default function Shopping() {
           <div className="flex justify-between p-4 items-center min-h-[77px] lg:max-w-[552px] w-full h-full">
             <Link to={"/"}>
               <span className="uppercase text-lg font-bold">
-                Dujão du corte
+                Rifa Sorteada
               </span>
             </Link>
             <div className="flex items-center font-bold gap-1 text-sm w-16 h-6">

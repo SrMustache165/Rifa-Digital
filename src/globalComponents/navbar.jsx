@@ -49,7 +49,7 @@ function Navbar() {
     <div className="flex justify-center items-center border-b-[0.5px] border-gray-200 bg-white z-50">
       <div className="flex justify-between p-4 items-center min-h-[77px] max-w-[1000px] w-full h-full">
         <Link to={"/"}>
-          <span className="uppercase text-lg font-bold">dujão du corte</span>
+          <span className="uppercase text-lg font-bold">Rifa Sorteada</span>
         </Link>
         <div className="sm:hidden">
           <button className="flex items-center" onClick={toggleMenu}>
